@@ -79,6 +79,8 @@ public class DrugsFragment extends Fragment {
         alertDialog.setTitle("Medicación Diaria");
         alertDialog.setMessage(new PartyResult(answer).optionSelected()); /* llamo las clases que cree para el answer y el result, ESTO
          ES LO IMPORTANTE esto me va a mostrar el resultado procesado.*/
+        // la idea era que capture el nombre del farmaco y lo muestre junto a la dosis diaria.
+        // pero no se como implementarlo :(
         alertDialog.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int i) {
